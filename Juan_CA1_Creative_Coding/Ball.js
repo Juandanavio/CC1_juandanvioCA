@@ -20,7 +20,7 @@ render(){ //render function
     push ()
     translate (this.pos.x, this.pos.y); //to translate the positioning of the balls and canvas into the same spot
     this.isIntersecting ? //"if else" function shorted to change parameters of the balls such as color, stroke, etc... 
-        (fill(r, g, b, a), strokeWeight(1), stroke(255,255,0)/* , this.speed.x *= -1, this.speed.y *= -1, this.speed.x *= 1, this.speed.y *= 1 */) : 
+        (fill(r, g, b, a), strokeWeight(1), stroke(255,255,0), this.speed.x *= -1, this.speed.y *= -1, this.speed.x *= 1, this.speed.y *= 1) : 
         (fill(255,0,0) );
 
     ellipse(0,0, this.radius*2) //the balls properties
