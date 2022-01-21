@@ -1,8 +1,8 @@
-class Shooter{
+class Weapon{
     constructor(x, y){
         this.pos = createVector(x, y);
         this.direction = 1;
-        this.barrelAngle = 0;
+        this.barrelAngle = -PI/2;
 }
 
 render(){
@@ -10,7 +10,7 @@ render(){
     translate(this.pos.x, this.pos.y);
     fill(255, 0, 0);
     rectMode(CENTER);
-    rect(0, 0, shooterWidth, shooterHeight);
+    rect(0, 0, weaponWidth, weaponHeight);
     
     rotate(this.barrelAngle)
     rectMode(CORNER);

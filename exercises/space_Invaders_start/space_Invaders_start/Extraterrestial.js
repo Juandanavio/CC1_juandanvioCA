@@ -1,15 +1,13 @@
-class Alien{
+class Extraterrestial{
     constructor(x, y){
         this.pos = createVector(x, y);
-        this.velocity = alienVelocity;
+        this.velocity = extraterrestialVelocity;
 }
 
 render(){
     push()
     translate(this.pos.x, this.pos.y);
-    image(alienImg,0,0, alienWidth, alienHeight);
-    // fill(255, 0, 0);
-    // ellipse(0, 0, alienWidth, alienHeight)
+    image(extraterrestialImg,0,0, extraterrestialWidth, extraterrestialHeight);
     pop()
 }
     
